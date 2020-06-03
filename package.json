@@ -1,0 +1,35 @@
+{
+  "name": "apiprueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel tables.js --out-dir build",
+    "create-table": "node tables createTables",
+    "drop-tables": "node tables dropTables",
+    "dev-start": "babel-watch index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.0",
+    "express-promise-router": "^3.0.3",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "pg": "^8.2.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/cli": "^7.10.1",
+    "@babel/polyfill": "^7.10.1",
+    "babel-watch": "^7.0.0",
+    "make-runnable": "^1.3.6"
+  }
+}
